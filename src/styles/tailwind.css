@@ -7,36 +7,36 @@
 @layer base {
   :root {
     /* Core Colors */
-    --color-background: #fafafa; /* warm off-white */
-    --color-foreground: #0f172a; /* near-black */
-    --color-border: #e2e8f0; /* light gray */
-    --color-input: #ffffff; /* white */
-    --color-ring: #0ea5e9; /* bright blue */
-    
+    --color-background: #0f172a; /* dark navy */
+    --color-foreground: #f1f5f9; /* light gray */
+    --color-border: #334155; /* slate border */
+    --color-input: #1e293b; /* dark input */
+    --color-ring: #14b8a6; /* teal ring */
+
     /* Card Colors */
-    --color-card: #ffffff; /* pure white */
-    --color-card-foreground: #0f172a; /* near-black */
-    
+    --color-card: #1e293b; /* dark card */
+    --color-card-foreground: #f1f5f9; /* light gray */
+
     /* Popover Colors */
-    --color-popover: #ffffff; /* white */
-    --color-popover-foreground: #0f172a; /* near-black */
-    
+    --color-popover: #1e293b; /* dark popover */
+    --color-popover-foreground: #f1f5f9; /* light gray */
+
     /* Muted Colors */
-    --color-muted: #f1f5f9; /* light slate */
-    --color-muted-foreground: #475569; /* medium gray */
-    
+    --color-muted: #334155; /* muted slate */
+    --color-muted-foreground: #94a3b8; /* muted text */
+
     /* Primary Colors */
-    --color-primary: #1e40af; /* deep blue */
+    --color-primary: #14b8a6; /* teal */
     --color-primary-foreground: #ffffff; /* white */
-    
+
     /* Secondary Colors */
     --color-secondary: #64748b; /* sophisticated slate */
     --color-secondary-foreground: #ffffff; /* white */
-    
+
     /* Accent Colors */
     --color-accent: #0ea5e9; /* bright blue */
     --color-accent-foreground: #ffffff; /* white */
-    
+
     /* Success Colors */
     --color-success: #059669; /* professional green */
     --color-success-foreground: #ffffff; /* white */
