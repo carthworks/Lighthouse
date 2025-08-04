@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors */
+    --color-background: #fafafa; /* warm off-white */
+    --color-foreground: #0f172a; /* near-black */
+    --color-border: #e2e8f0; /* light gray */
+    --color-input: #ffffff; /* white */
+    --color-ring: #0ea5e9; /* bright blue */
+    
+    /* Card Colors */
+    --color-card: #ffffff; /* pure white */
+    --color-card-foreground: #0f172a; /* near-black */
+    
+    /* Popover Colors */
+    --color-popover: #ffffff; /* white */
+    --color-popover-foreground: #0f172a; /* near-black */
+    
+    /* Muted Colors */
+    --color-muted: #f1f5f9; /* light slate */
+    --color-muted-foreground: #475569; /* medium gray */
+    
+    /* Primary Colors */
+    --color-primary: #1e40af; /* deep blue */
+    --color-primary-foreground: #ffffff; /* white */
+    
+    /* Secondary Colors */
+    --color-secondary: #64748b; /* sophisticated slate */
+    --color-secondary-foreground: #ffffff; /* white */
+    
+    /* Accent Colors */
+    --color-accent: #0ea5e9; /* bright blue */
+    --color-accent-foreground: #ffffff; /* white */
+    
+    /* Success Colors */
+    --color-success: #059669; /* professional green */
+    --color-success-foreground: #ffffff; /* white */
+    
+    /* Warning Colors */
+    --color-warning: #d97706; /* amber */
+    --color-warning-foreground: #ffffff; /* white */
+    
+    /* Error/Destructive Colors */
+    --color-error: #dc2626; /* clear red */
+    --color-error-foreground: #ffffff; /* white */
+    --color-destructive: #dc2626; /* clear red */
+    --color-destructive-foreground: #ffffff; /* white */
+    
+    /* Radius */
+    --radius: 0.5rem;
+  }
+  
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  body, p, span, div {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer utilities {
+  .text-shadow-sm {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .shadow-soft {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shadow-elevated {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .transition-smooth {
+    transition: all 150ms ease-out;
+  }
+  
+  .transition-organic {
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
